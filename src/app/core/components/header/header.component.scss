@@ -7,7 +7,7 @@
    background: $primaryWhite;
    
  .img{
-     height: 92px;
+     height: 50px;
  }
 }
 .header-wrapper {
@@ -23,6 +23,7 @@ height: 300px !important;
 
 @media (min-width:1280px){
   .header{
-    height: 80px;
+    // height: 100px;
+    // padding:12px
   }
 }
