@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/variable.scss";
+
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+  background: $primaryBiege !important;
+  margin: 0 !important;
+ 
+}
+
+// .scroll-body{
+//   overflow: auto;
+//   // height: calc(100vh - 84px);
+
+
+// }
+
+.navbar-collapse {
+  justify-content: space-around !important;
+}

@@ -1,0 +1,52 @@
+@import "../../../../assets/styles/variable.scss";
+img{
+    height: 90px;
+}
+// .bgfooter{
+//     box-shadow: $secondaryBoxShadow;
+//     padding: 0 10px;
+//     background: $primaryWhite;
+// }
+// .footer__contact{
+//     font-family: Poppins,sans-serif;
+//     font-size: 14px;
+//     font-weight: 400;
+// }
+// .footer__copyright{
+//     font-size: 12px;
+//     font-weight: 400;
+// }
+// .footer-container{
+//     padding-top: 20px;
+// }
+// .footer__list{
+
+//     padding-top: .4rem;
+//     font-family: Poppins,sans-serif;
+//     font-size: 12px;
+//     font-weight: 400;
+//     list-style: none
+// }
+// .footer__list-link{
+//     color: black;
+// }
+// .footer__headings{
+//     font-family: Poppins,sans-serif;
+//     font-size: 14px!important;
+//     font-weight: 700!important;
+//     font-weight: 500!important;
+//     list-style: none;
+//     letter-spacing: 2px
+// }
+
+.link{
+    text-decoration: none !important;
+    cursor: pointer;
+    color: orange;
+}
+.reg-link{
+    color:black;
+    text-decoration: none !important;
+    font-weight: bold;
+    cursor: pointer;
+}

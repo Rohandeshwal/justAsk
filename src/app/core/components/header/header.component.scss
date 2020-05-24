@@ -1,0 +1,28 @@
+@import "../../../../assets/styles/variable.scss";
+
+.header {
+
+   box-shadow: $secondaryBoxShadow;
+  
+   background: $primaryWhite;
+   
+ .img{
+     height: 92px;
+ }
+}
+.header-wrapper {
+  padding: 16px 0px;
+  width: 40%;
+}
+
+.carousel-inner img {
+width: 50% !important;
+height: 300px !important;
+}
+
+
+@media (min-width:1280px){
+  .header{
+    height: 80px;
+  }
+}
