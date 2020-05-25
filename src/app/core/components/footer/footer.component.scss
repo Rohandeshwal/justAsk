@@ -42,7 +42,11 @@ img{
 .link{
     text-decoration: none !important;
     cursor: pointer;
-    color: orange;
+    color: black;
+    &:hover{
+        color:orange;
+    }
+   
 }
 .reg-link{
     color:black;

@@ -61,3 +61,37 @@
     transform: rotateY(180deg);
   }
   
+  @media (max-width: 991px){
+
+    .col-3 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    }
+    
+    .flip-card[_ngcontent-xkg-c4] {
+    height: 350px;
+    }
+    }
+    
+    @media (max-width: 767px){
+    
+    .col-3 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    .flip-card[_ngcontent-xkg-c4] {
+    height: 320px;
+    }
+    img[_ngcontent-xkg-c4] {
+    width: 100%;
+    }
+    }
+
+    .card-title {
+      margin-bottom: 1.99rem;
+  }
