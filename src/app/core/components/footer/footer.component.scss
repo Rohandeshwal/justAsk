@@ -1,17 +1,24 @@
 @import "../../../../assets/styles/variable.scss";
 img{
-    height: 50px;
+    height: 60px;
 }
-
+.heading{
+    color:#0039CB;
+    font-weight: 500;
+}
 
 .link{
     text-decoration: none !important;
     cursor: pointer;
     color: black;
     &:hover{
-        color:orange;
+        color:#FF3D00;
     }
    
+}
+.social{
+    height: 22px;
+
 }
 .reg-link{
     color:black;
