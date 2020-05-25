@@ -2,42 +2,7 @@
 img{
     height: 50px;
 }
-// .bgfooter{
-//     box-shadow: $secondaryBoxShadow;
-//     padding: 0 10px;
-//     background: $primaryWhite;
-// }
-// .footer__contact{
-//     font-family: Poppins,sans-serif;
-//     font-size: 14px;
-//     font-weight: 400;
-// }
-// .footer__copyright{
-//     font-size: 12px;
-//     font-weight: 400;
-// }
-// .footer-container{
-//     padding-top: 20px;
-// }
-// .footer__list{
 
-//     padding-top: .4rem;
-//     font-family: Poppins,sans-serif;
-//     font-size: 12px;
-//     font-weight: 400;
-//     list-style: none
-// }
-// .footer__list-link{
-//     color: black;
-// }
-// .footer__headings{
-//     font-family: Poppins,sans-serif;
-//     font-size: 14px!important;
-//     font-weight: 700!important;
-//     font-weight: 500!important;
-//     list-style: none;
-//     letter-spacing: 2px
-// }
 
 .link{
     text-decoration: none !important;
@@ -53,4 +18,15 @@ img{
     text-decoration: none !important;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 767px){
+    .footer .col-4,
+ .footer .col-5,
+ .footer .col-3 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
 }
