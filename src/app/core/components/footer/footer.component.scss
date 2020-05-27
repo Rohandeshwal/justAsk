@@ -26,8 +26,19 @@ img{
     font-weight: bold;
     cursor: pointer;
 }
+@media (max-width: 1199px) and (min-width: 768px){
+    .timings p > span {
+    width: 100% !important;
+    text-align: left !important;
+    }
+    
+    }
 
 @media (max-width: 767px){
+    .timings p > span {
+        font-size: 13px;
+        text-align: left !important;
+    }
     .time{
         font-size: 15px;
     }
@@ -40,6 +51,7 @@ img{
     margin-bottom: 20px;
 }
 }
+
 
 .timings p {
     margin: 0;
