@@ -40,3 +40,17 @@ img{
     margin-bottom: 20px;
 }
 }
+
+.timings p {
+    margin: 0;
+}
+
+.timings p > span:first-child {
+    width: 44%;
+    display: inline-block;
+}
+
+.timings p:last-child > span:first-child {
+
+text-align: center;
+}
