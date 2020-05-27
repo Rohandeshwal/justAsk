@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { SharedService } from 'src/app/shared/shared.service';
+
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor( private sharedService:SharedService) { 
+   
+  }
+@Output()scrollOutput = new EventEmitter();
 
   ngOnInit(): void {
   }
+  highlighter(id?){
+    
+    this.sharedService.setHighlighterId(id);
+    this.scrollOutput.emit(true)
 
+  }
 }

@@ -18,7 +18,40 @@ body {
 
 
 // }
+.form-wrapper {
+ 
+  border: 1px solid #ddd;
+  width: 100%;
+ 
+  user-select: none;
+  padding: 24px;
+}
 
 .navbar-collapse {
   justify-content: space-around !important;
+}
+.add-btn{
+  background: #0039CB;
+  color: #FFFFFF;
+  border-radius: 0 10px;
+  height: 48px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 0px 2px 3px #0000001A !important;
+}
+button:focus{
+  outline: none;
+}
+.back-btn{
+  background: #FF3E03;
+  border: 0;
+  color: white;
+  border-radius: 0 10px;
+  height: 48px;
+  width: 140px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0px 2px 3px #0000001A !important;
 }

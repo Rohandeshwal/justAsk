@@ -1,0 +1,66 @@
+<app-header></app-header>
+<div class="add-wrapper">
+  <div class="add-header">
+    <h2 class="heading">{{ MasterData?.name }}</h2>
+  </div>
+  <div class="profie my-4">
+<div class="row">
+    <div class="col-4">
+    <img src="{{ MasterData?.img }}" alt="" width="400" height="200" />
+</div>
+<div class="col-5">{{MasterData?.description}}</div>
+</div>
+  </div>
+  <div class="form-wrapper">
+    <form class="form">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <h6>Name*</h6>
+            <input type="text" class="form-control" placeholder="Name" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <h6>Mobile No</h6>
+            <input type="number" class="form-control" placeholder="Name" />
+          </div>
+        </div>
+        <!-- <ejs-richtexteditor id='defaultRTE' #sample [placeholder]='description'></ejs-richtexteditor> -->
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-8">
+            <h6>Add Address Details</h6>
+            <textarea
+              autosize
+              class="form-control"
+              cols="2"
+              rows="3"
+              placeholder="Enter address details "
+              maxlength="500"
+            ></textarea>
+            <!-- <ejs-richtexteditor id='defaultRTE' #sample [placeholder]='description'></ejs-richtexteditor> -->
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center button">
+        <div class="back marr-10 marl-10">
+          <button type="button" class="back-btn" [routerLink]="['../list']">
+            BACK
+          </button>
+        </div>
+        <div class="add marr-10 marl-10">
+          <button type="button" class="add-btn" [routerLink]="['../list']">
+            SAVE
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="w-100 bg-white py-3" id="footer">
+  <app-footer></app-footer>
+</div>
