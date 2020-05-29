@@ -29,7 +29,7 @@ export class RegisterServiceComponent implements OnInit {
    
   // }
    onSubmit() {
-    this.toastr.success('Successfully to the admin');
+    this.toastr.success('Successfully send to the admin');
     this.submitted = true;
     // if (this.f.valid) {
     //  
