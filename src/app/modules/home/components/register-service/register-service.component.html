@@ -8,16 +8,20 @@
     <div class="col-4">
     <img class="img" src="{{ MasterData?.img }}" alt="" width="400" height="200" />
 </div>
-<div class="col-5">{{MasterData?.description}}</div>
-</div>
+<div class="col-5 detail">{{MasterData?.detail}}</div>
+</div>  
   </div>
   <div class="form-wrapper">
-    <form class="form">
+    <form class="form" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
       <div class="form-group">
         <div class="row">
           <div class="col-6">
             <h6>Name*</h6>
-            <input type="text" class="form-control" placeholder="Name" />
+            <input type="text" name="name" [(ngModel)]="model.name" required #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" class="form-control" placeholder="Name" />
+            <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+              <div *ngIf="name.errors.required">First Name is required</div>
+          </div>
+    
           </div>
         </div>
       </div>
@@ -25,7 +29,10 @@
         <div class="row">
           <div class="col-6">
             <h6>Mobile No</h6>
-            <input type="number" class="form-control" placeholder="Name" />
+            <input type="number"  name="mobile" required [(ngModel)]="model.mobile" max="10" [ngClass]="{ 'is-invalid': f.submitted && mobile.invalid }"  #mobile="ngModel" class="form-control" placeholder="Mobile" />
+            <div *ngIf="f.submitted && mobile.invalid" class="invalid-feedback">
+              <div *ngIf="mobile.errors.required">Mobile Number is required</div>
+          </div>
           </div>
         </div>
         <!-- <ejs-richtexteditor id='defaultRTE' #sample [placeholder]='description'></ejs-richtexteditor> -->
@@ -40,7 +47,7 @@
               cols="2"
               rows="3"
               placeholder="Enter address details "
-              maxlength="500"
+              maxlength="500" required
             ></textarea>
             <!-- <ejs-richtexteditor id='defaultRTE' #sample [placeholder]='description'></ejs-richtexteditor> -->
           </div>
@@ -48,12 +55,12 @@
       </div>
       <div class="d-flex justify-content-center button">
         <div class="back marr-10 marl-10">
-          <button type="button" class="back-btn" [routerLink]="['../list']">
+          <button type="button" class="back-btn" >
             BACK
           </button>
         </div>
         <div class="add marr-10 marl-10">
-          <button type="button" class="add-btn" [routerLink]="['../list']">
+          <button type="submit"  class="add-btn" >
             SAVE
           </button>
         </div>

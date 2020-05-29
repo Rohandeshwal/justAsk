@@ -12,12 +12,18 @@ body {
  
 }
 
-// .scroll-body{
-//   overflow: auto;
-//   // height: calc(100vh - 84px);
 
 
-// }
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: none !important;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .form-wrapper {
  
   border: 1px solid #ddd;
@@ -54,4 +60,7 @@ button:focus{
   font-weight: 700;
   font-size: 16px;
   box-shadow: 0px 2px 3px #0000001A !important;
+}
+#toast-container > div {
+  opacity:1;
 }

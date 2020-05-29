@@ -5,9 +5,11 @@
    box-shadow: $secondaryBoxShadow;
   
    background: $primaryWhite;
+   outline: none;
    
  .img{
      height: 55px;
+     outline: none;
  }
 }
 .header-wrapper {
@@ -21,6 +23,10 @@ height: 300px !important;
 }
 .nav-link{
   cursor: pointer;
+ 
+  &:focus{
+    outline: none !important;
+  }
 }
 
 
