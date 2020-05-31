@@ -3,10 +3,30 @@
     filter: brightness(50%);
 }
 .carousel-inner{
-  
- 
+ height: 20.8vw; 
 }
 .carousel {
     padding: 10px;
     background-color:#f1f3f6;
 }
+.carousel-caption p {
+    font-size: 14px;
+}
+.carousel-item{
+    position: static !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+@media (max-width:767px){
+
+    .carousel-item h5 {
+        font-size: 1rem;
+
+    }
+    .carousel-inner{
+        height: 35vw; 
+       }
+}
+
+// 
