@@ -15,21 +15,21 @@ export class CardsComponent implements OnInit {
     {
       img:"./assets/images/services/Disinfection.jpg",
       name:"Sanitisation",
-      description:"Offices, schools, nursing homes, shopping complex and other commercial settings are especially susceptible to germs and bacterial infestations, and not just during the cold and flu seasons. Our spray is non-corrosive so it’s safe to use where sensitive electronics are located. A fine mist protects over and under all objects so everything your employees, your customers, members, and participants touch are disinfected and deodorized to clinically clean standards. We strictly follow WHO and ICMR Guidelines to prepare our solution.",
+      description:"Offices, schools, nursing homes, shopping complex and other commercial settings are especially susceptible to germs and bacterial infestations, and not just during the cold and flu seasons.",
       visible:false,
       detail:"Offices, schools, nursing homes, shopping complex and other commercial settings are especially susceptible to germs and bacterial infestations, and not just during the cold and flu seasons. Our spray is non-corrosive so it’s safe to use where sensitive electronics are located. A fine mist protects over and under all objects so everything your employees, your customers, members, and participants touch are disinfected and deodorized to clinically clean standards. We strictly follow WHO and ICMR Guidelines to prepare our solution.",
     },
     {
     img:"./assets/images/services/plumber-1.jpg",
     name:"Plumber",
-    description:"Home plumbing services includes fixing blocks and leakages, work to do with taps or sinks, toilet and sanitary work, bathroom fittings or any other residential plumbing services associated with pipes, pumps or tanks.All the plumbers are trained and certified. ",
+    description:"Home plumbing services includes fixing blocks and leakages, work to do with taps or sinks, toilet and sanitary work, bathroom fittings or any other residential plumbing services associated with pipes.",
     visible:false,
     detail :"Home plumbing services includes fixing blocks and leakages, work to do with taps or sinks, toilet and sanitary work, bathroom fittings or any other residential plumbing services associated with pipes, pumps or tanks.",
   },
   {
     img:"./assets/images/services/electrician.jpg",
     name:"Electrician",
-    description:"Doorstep repair and hassle free service for all kind of electrical issue for residential and commercial places by our premium and trained technicians. Our all technicians follow safety measures provided by ICMR. ",
+    description:"Doorstep repair and hassle free service for all kind of electrical issue for residential and commercial places by our premium and trained technicians.Our all technicians follow safety measures ",
     visible:false,
     detail:"Doorstep repair and hassle free service for all kind of electrical issue for  residential and commercial places by our premium and trained technicians. Our all technicians follow safety measures provided by ICMR."
   },
@@ -42,14 +42,14 @@ export class CardsComponent implements OnInit {
   {
     img:"./assets/images/services/painting.jpg",
     name:"Painting",
-    description:"Professional painting service includes interior and exterior house painting, commercial  painting, pressure washing, drywall repair &amp; more. We will make your house the way you want to be. Professionals cover all the furniture and tape to edges to get a smooth and clean work.",    visible:false,
+    description:"Professional painting service includes interior and exterior painting, pressure washing, drywall more. We will make your house the way you want to be. Professionals cover  smooth and clean work.",    visible:false,
     detail:"Professional painting service includes interior and exterior house painting, commercial  painting, pressure washing, drywall repair &amp; more. We will make your house the way you want to be. Professionals cover all the furniture and tape to edges to get a smooth and clean work."
   },
   
   {
     img:"./assets/images/services/POP- False ceiling.jpg",
     name:"Home Interior ( POP, False Ceiling)",
-    description:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house. We use branded products Gypsum Board (Borell) and POP (Shakarni) to provide quality product to the client. Channel is used of Jindal and Lafarge. ",
+    description:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house. We use branded products Gypsum Board and POP etc",
     visible:false,
     detail:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house. We use branded products Gypsum Board (Borell) and POP (Shakarni) to  provide quality product to the client. Channel is used of Jindal and Lafarge."
   },
@@ -64,7 +64,7 @@ export class CardsComponent implements OnInit {
   {
     img:"./assets/images/steel.jpg",
     name:"Aluminium,Steel & Glasswork",
-   description:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass, fibre sheet, designer railing and balcony can be done with good quality and low prices. ",
+   description:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass, fibre sheet, designer railing and balcony can be done with good quality and low prices. All kind of Aluminium work, Glass Work and Steel work by expert",
    visible:false,
    detail:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass, fibre sheet, designer railing and balcony can be done with good quality and low prices."
   }

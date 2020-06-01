@@ -8,13 +8,16 @@
             width="400"  height="200">
               <div class="card-body">
                   <h5 class="card-title">{{data.name}}</h5>
-                  <p  [class.showtable]="data.visible" class="para-content card-text">{{data.description}}</p>
-                  <div  class="d-flex showHide">
+                  <p  class="card-text">{{data.description}}</p>
+                  <!-- class="para-content -->
+                  <!-- [class.showtable]="data.visible" -->
+                  <!-- <div  class="d-flex showHide">
                   <button class="btn btn-read" type="button" (click)="data.visible = !data.visible">{{ data.visible ? 'Read less': '..Read more' }}</button>
-                </div>
-                </div>
+                </div> -->
                 <div class="button1">
-                <button class="register-btn"  (click)="goToRegister(data)">Book a Service</button></div>
+                  <button class="register-btn"  (click)="goToRegister(data)">Book a Service</button></div>
+                </div>
+               
           </div>
           <!-- <div class="flip-card-back">
             <h2 class="flip-font">{{data.name}}</h2>
