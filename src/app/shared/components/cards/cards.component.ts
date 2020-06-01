@@ -49,7 +49,7 @@ export class CardsComponent implements OnInit {
   {
     img:"./assets/images/services/POP- False ceiling.jpg",
     name:"Home Interior ( POP, False Ceiling)",
-    description:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house. We use branded products Gypsum Board and POP etc",
+    description:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house.",
     visible:false,
     detail:"On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house. We use branded products Gypsum Board (Borell) and POP (Shakarni) to  provide quality product to the client. Channel is used of Jindal and Lafarge."
   },
@@ -57,14 +57,14 @@ export class CardsComponent implements OnInit {
   {
     img:"./assets/images/services/AC Service.jpg",
     name:"Home Appliance Repair and Servicing",
-    description:"On call service for repair, installation and uninstallation of appliance like AC, Refrigerator, Washing Machine etc. We use latest technology jet pump for cleaning and servicing of the appliance. 14 days warranty is provided on the repairing.",
+    description:"On call service for repair, installation and uninstallation of appliance like AC, Refrigerator etc. We use latest technology jet pump for cleaning and servicing of the appliance.",
     visible:false,
     detail:"On call service for repair, installation and uninstallation of  appliance like AC, Refrigerator, Washing Machine etc. We use latest technology jet pump for cleaning and servicing of the appliance. 14 days warranty is provided on the repairing."
   },
   {
     img:"./assets/images/steel.jpg",
     name:"Aluminium,Steel & Glasswork",
-   description:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass, fibre sheet, designer railing and balcony can be done with good quality and low prices. All kind of Aluminium work, Glass Work and Steel work by expert",
+   description:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass,fibre sheet designer railing and balcony  etc can be done with good quality and low prices.",
    visible:false,
    detail:"We provide one stop solution for all your aluminium, steel and glass work needs. Toughened glass, fibre sheet, designer railing and balcony can be done with good quality and low prices."
   }
