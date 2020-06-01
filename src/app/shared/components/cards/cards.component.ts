@@ -42,7 +42,7 @@ export class CardsComponent implements OnInit {
   {
     img:"./assets/images/services/painting.jpg",
     name:"Painting",
-    description:"Professional painting service includes interior and exterior painting, pressure washing, drywall more. We will make your house the way you want to be. Professionals cover  smooth and clean work.",    visible:false,
+    description:"Professional painting service includes interior and exterior painting, drywall more. We will make your house the way you want to be. Professionals cover  smooth and clean work.",    visible:false,
     detail:"Professional painting service includes interior and exterior house painting, commercial  painting, pressure washing, drywall repair &amp; more. We will make your house the way you want to be. Professionals cover all the furniture and tape to edges to get a smooth and clean work."
   },
   
