@@ -4,9 +4,10 @@
 
 }
 .button1 {
-  position: absolute;
+   position: absolute !important;
   left: 25%;
   bottom: 10px;
+  width: 127px !important;
   transform: translateY(-50%);
 }
 .flip-font{
