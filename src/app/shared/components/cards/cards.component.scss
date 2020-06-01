@@ -3,8 +3,11 @@
   margin-bottom:30px;
 
 }
-.button1{
-  padding: 39px 64px;
+.button1 {
+  position: absolute;
+  left: 25%;
+  bottom: 10px;
+  transform: translateY(-50%);
 }
 .flip-font{
   font-size: 18px;
@@ -112,6 +115,10 @@
 
     
     @media (max-width: 767px){
+      .button1 {
+        left: 36%;
+      }
+
       .flip-card {
         height: 530px;
       }
