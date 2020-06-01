@@ -11,7 +11,28 @@ body {
   margin: 0 !important;
  
 }
+.btn-read {
+  color: #343B41;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0;
+  background: none;
+ 
+}
+.btn-read:focus {
+  outline: none;
+  box-shadow: none;
+}
 
+.para-content {
+  line-height: 18px;
+  height: 90px;
+  overflow: hidden;
+}
+.showtable {
+  overflow: visible;
+  height: auto;
+}
 
 
 .form-control.is-invalid,

@@ -33,7 +33,7 @@
 .flip-card {
   
      width: 100%;
-     height: 490px;
+     height: 629px;
     perspective: 1000px;
   }
   .flip-card-inner {
@@ -41,9 +41,12 @@
   }
   .card-text{
     font-size: 14px;
+    font-family: Helvetica Neue;
 
   }
-
+  .showHide{
+    justify-content: flex-end;
+  }
  
   // .flip-card-inner {
   //   position: relative;
