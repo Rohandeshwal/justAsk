@@ -1,6 +1,14 @@
 @import "../../../../assets/styles/variable.scss";
+.reg-link{
+  color:black;
+  text-decoration: none !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.social{
+  height: 22px;
 
-
+}
 .header {
 
   position: fixed;
