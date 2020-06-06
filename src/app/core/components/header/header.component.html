@@ -15,9 +15,24 @@
             <li class="nav-item">
               <a class="nav-link" (click)="highlighter('aboutus')">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" (click)="highlighter('services')">Services</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services        
+              </a>
+              <div class="dropdown-menu " (click)="highlighter('services')" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" >Disinfecftion/Sanitisation</a>
+                <a class="dropdown-item" >Plumbing</a>
+                <a class="dropdown-item" >Electrician</a>
+                <a class="dropdown-item" >Painting</a>
+                <a class="dropdown-item" >Home Interior</a>
+                <a class="dropdown-item" >Home Appliance Repair</a>
+                <a class="dropdown-item" >Aluminium steel & Glass Work</a>
+               
+              </div>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" (click)="highlighter('services')">Services</a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" (click)="highlighter('footer')">Contact Us</a>
             </li>
