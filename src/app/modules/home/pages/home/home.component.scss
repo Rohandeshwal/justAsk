@@ -4,3 +4,8 @@ div#header {
 .about{
     padding: 24px;
   }
+
+  @media (max-width:991px){
+    div#header {
+    min-height: 116px;}
+  }
