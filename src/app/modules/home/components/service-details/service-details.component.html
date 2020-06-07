@@ -1,0 +1,77 @@
+<div id="customHeader">
+  <app-header></app-header>
+</div>
+<div class="add-wrapper ">
+  <div class="add-header mb-0">
+    <span class="heading m-0" style="font-size:18px">Book Our {{ serviceDetails?.name }} Service</span>
+  </div>
+  <div class="profie my-4">
+    <div class="row">
+      <div class="col-4">
+        <img class="img" src="{{ serviceDetails?.img }}" alt="" width="400" height="200" />
+      </div>
+      <div class="col-5 detail" style="text-align: justify;">{{serviceDetails?.detail}}</div>
+    </div>
+  </div>
+  <div class="form-wrapper">
+    <form [formGroup]="contactForm" novalidate>
+      <div class="alert alert-warning">
+        <strong>Please Note !&nbsp;</strong> Your <b>Name</b> and <b>Phone Number</b> are mandatory fields.
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <label for="name" class="frm-label">Your Name</label>
+            <span class="required">&nbsp;*</span>
+            <!-- [ngClass]="{ 'is-invalid': contactForm.get(`name`).invalid }" -->
+            <input id="name"   type="text" formControlName="name"
+            class="form-input form-control"  placeholder="Please Enter Your Name" />
+            <!-- <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+              <div *ngIf="name.errors.required">First Name is required</div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <label for="name" class="frm-label">Your Phone Number</label>
+            <span class="required">&nbsp;*</span>
+            <input type="number"    formControlName="phoneNumber"
+            class="form-input form-control"  name="mobile" required placeholder="Please Enter your Contact Number" />
+            <!-- <div *ngIf="f.submitted && mobile.invalid" class="invalid-feedback">
+              <div *ngIf="mobile.errors.required">Mobile Number is required</div>
+          </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-8">
+            <label for="name" class="frm-label">Your Address</label>
+            <span class="required">&nbsp;*</span>
+            <textarea  class="form-input form-control"  formControlName="address" autosize
+               cols="2" rows="4" placeholder="Enter address details " maxlength="500"
+              required></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center button">
+        <div class="back marr-10 marl-10">
+          <button type="button" class="back-btn btn">
+            Back
+          </button>
+        </div>
+        <div class="add marr-10 marl-10">
+          <button class="add-btn btn" (click)="onContactFormSave()">
+            Save
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="w-100 bg-white py-3" id="footer">
+  <app-footer></app-footer>
+</div>

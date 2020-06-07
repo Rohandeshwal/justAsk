@@ -1,5 +1,5 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
-import { SharedService } from 'src/app/shared/shared.service';
+import { JustAskDataHelperService } from '../../services/just-ask-data-helper-service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { SharedService } from 'src/app/shared/shared.service';
 export class HeaderComponent implements OnInit {
 
   services:any;
-  constructor( private sharedService:SharedService,private shared:SharedService) { 
+  constructor( private justAskDataHelper:JustAskDataHelperService) { 
    
   }
 @Output()scrollOutput = new EventEmitter();
@@ -20,15 +20,13 @@ export class HeaderComponent implements OnInit {
   }
   highlighter(id?){
     
-    this.sharedService.setHighlighterId(id);
+  //  this.sharedService.setHighlighterId(id);
     this.scrollOutput.emit(true)
 
   }
   getServices(){
  
-    this.shared.getServices().subscribe(res =>{
-      this.services = res;
-      console.log(res);
-    })
+    this.services = this.justAskDataHelper.getAllServices();
+    console.log(this.services);
   }
 }

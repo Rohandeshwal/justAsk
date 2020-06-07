@@ -7,14 +7,15 @@ import {HttpClientModule} from '@angular/common/http'
 
 import { CoreRoutingModule } from './core-routing.module';
 
-
 @NgModule({
   declarations: [HeaderComponent,FooterComponent],
   imports: [
     CommonModule,
     CoreRoutingModule,HttpClientModule
   ],
-  exports: [HeaderComponent, CoreRoutingModule,FooterComponent]
+  exports: [HeaderComponent, CoreRoutingModule,FooterComponent],
+  providers:[]
+
 
 })
 export class CoreModule { }

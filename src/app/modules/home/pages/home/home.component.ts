@@ -8,17 +8,14 @@ import { SharedService } from 'src/app/shared/shared.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private sharedService:SharedService) { }
+  constructor(private sharedService: SharedService) { }
 
   ngOnInit(): void {
-   
-    
-    
   }
-  scrollTo(){
+  scrollTo() {
     let selectedId = this.sharedService.getHighlighter()
     document.querySelector("#" + selectedId).scrollIntoView();
-    console.log("select",selectedId);
+    console.log("select", selectedId);
 
   }
 }

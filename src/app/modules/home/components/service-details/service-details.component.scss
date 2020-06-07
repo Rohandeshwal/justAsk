@@ -41,3 +41,27 @@
 #customHeader{
     min-height: 81px;
 }
+
+.frm-label
+{
+font-size: 16px;
+color: #0039CB;
+font-weight: 700;
+}
+
+.required
+{
+    color: #ff3e03;
+}
+
+.form-input {
+    color:black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(128, 123, 123);
+    opacity: 1; /* Firefox */
+    font-weight: 500;
+}

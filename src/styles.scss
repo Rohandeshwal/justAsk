@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/styles/variable.scss";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
 html,
 body {
   margin: 0 !important;
@@ -58,29 +60,23 @@ input::-webkit-inner-spin-button {
   justify-content: space-around !important;
 }
 .add-btn{
-  background: #0039CB;
+  background-color: #0039CB;
   color: #FFFFFF;
-  border-radius: 0 10px;
   height: 48px;
-  width: 140px;
+  width: 120px;
   font-size: 16px;
-  font-weight: 700;
-  border: 0;
-  box-shadow: 0px 2px 3px #0000001A !important;
+  font-weight: 600;
 }
 button:focus{
   outline: none;
 }
 .back-btn{
-  background: #FF3E03;
-  border: 0;
-  color: white;
-  border-radius: 0 10px;
+  background-color: #FF3E03;
+  color: #FFFFFF;
   height: 48px;
-  width: 140px;
-  font-weight: 700;
+  width: 120px;
   font-size: 16px;
-  box-shadow: 0px 2px 3px #0000001A !important;
+  font-weight: 600;
 }
 #toast-container > div {
   opacity:1;

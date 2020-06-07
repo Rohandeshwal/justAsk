@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../../shared.service';
 import { Router } from '@angular/router';
+import { JustAskDataHelperService } from 'src/app/core/services/just-ask-data-helper-service';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -12,8 +13,8 @@ export class CardsComponent implements OnInit {
   
   
   cardsData:any;
-  constructor(private sharedService:SharedService,
-    private route:Router,private shared:SharedService) { }
+  constructor(private justAskDataHelper:JustAskDataHelperService,
+    private route:Router) { }
 
   ngOnInit(): void { 
 this.getCardData();
@@ -21,13 +22,10 @@ this.getCardData();
  
   getCardData(){
     
-    this.shared.getServices().subscribe(res =>{
-      this.cardsData = res;
-      console.log(res);
-    })
+    this.cardsData = this.justAskDataHelper.getAllServices();
+  console.log(this.cardsData);
   }
   goToRegister(id){
-    // this.sharedService.setData(id);
     this.route.navigate(['service/'+id])
   }
 
