@@ -21,13 +21,13 @@
               </a>
               <!-- (click)="highlighter('services')" -->
               <div class="dropdown-menu "  aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" >Disinfecftion/Sanitisation</a>
-                <a class="dropdown-item" >Plumbing</a>
+                <a class="dropdown-item"  *ngFor="let service of services" [routerLink] ="'../service/'+service.id">{{service?.name}}</a>
+                <!-- <a class="dropdown-item" >Plumbing</a>
                 <a class="dropdown-item" >Electrician</a>
                 <a class="dropdown-item" >Painting</a>
                 <a class="dropdown-item" >Home Interior</a>
                 <a class="dropdown-item" >Home Appliance Repair</a>
-                <a class="dropdown-item" >Aluminium steel & Glass Work</a>
+                <a class="dropdown-item" >Aluminium steel & Glass Work</a> -->
                
               </div>
             </li>

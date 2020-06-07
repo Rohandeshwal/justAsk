@@ -13,7 +13,7 @@ const routes: Routes = [
     pathMatch: "full"
   },
   { path: "home", component: HomeComponent},
-  { path: "service", component: RegisterServiceComponent},
+  { path: "service/:id", component: RegisterServiceComponent},
   
 ];
 
