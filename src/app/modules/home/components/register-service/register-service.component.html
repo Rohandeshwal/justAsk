@@ -19,7 +19,7 @@
         <div class="row">
           <div class="col-6">
             <h6>Name*</h6>
-            <input type="text" name="name" [(ngModel)]="model.name" required #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" class="form-control" placeholder="Name" />
+            <input type="text" name="name" [(ngModel)]="model.name" required #name="ngModel" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" class="form-control" placeholder="Name is required"  />
             <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
               <div *ngIf="name.errors.required">First Name is required</div>
           </div>
@@ -30,8 +30,8 @@
       <div class="form-group">
         <div class="row">
           <div class="col-6">
-            <h6>Mobile No</h6>
-            <input type="number"  name="mobile" required [(ngModel)]="model.mobile" max="10" [ngClass]="{ 'is-invalid': f.submitted && mobile.invalid }"  #mobile="ngModel" class="form-control" placeholder="Mobile" />
+            <h6>Mobile No*</h6>
+            <input type="number"  name="mobile" required [(ngModel)]="model.mobile" max="10" [ngClass]="{ 'is-invalid': f.submitted && mobile.invalid }"  #mobile="ngModel" class="form-control" placeholder="Mobile number is required" />
             <div *ngIf="f.submitted && mobile.invalid" class="invalid-feedback">
               <div *ngIf="mobile.errors.required">Mobile Number is required</div>
           </div>

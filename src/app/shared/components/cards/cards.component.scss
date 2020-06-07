@@ -45,7 +45,7 @@
   }
   .card-text{
     font-size: 15px;
-    font-family: Helvetica Neue;
+    
 
   }
   .showHide{
@@ -112,7 +112,12 @@
     // height: 350px;
     }
     }
-
+    .Tname{
+   
+      font-size: 15px;
+      font-weight: bold;
+      padding: 34px 12px;
+  }
 
     
     @media (max-width: 767px){
