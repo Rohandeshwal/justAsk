@@ -1,7 +1,7 @@
 {
 	"services": [{
 			"id": 1,
-			"img": "./assets/images/services/Disinfection.jpg",
+			"img": "./assets/images/service/disin.jpg",
 			"name": "Sanitisation",
 			"description": "Offices, schools, nursing homes, shopping complex and other commercial settings are especially susceptible to germs and bacterial infestations, and not just during the cold and flu seasons.",
 			"visible": false,
@@ -9,7 +9,7 @@
 		},
 		{
 			"id": 2,
-			"img": "./assets/images/services/plumber-1.jpg",
+			"img": "./assets/images/service/plumber.jpg",
 			"name": "Plumber",
 			"description": "Home plumbing services includes fixing blocks and leakages, work to do with taps or sinks, toilet and sanitary work, bathroom fittings or any other residential plumbing services associated with pipes.",
 			"visible": false,
@@ -17,7 +17,7 @@
 		},
 		{
 			"id": 3,
-			"img": "./assets/images/services/electrician.jpg",
+			"img": "./assets/images/service/electrician.jpg",
 			"name": "Electrician",
 			"description": "Doorstep repair and hassle free service for all kind of electrical issue for residential and commercial places by our premium and trained technicians.Our all technicians follow safety measures ",
 			"visible": false,
@@ -26,7 +26,7 @@
 
 		{
 			"id": 4,
-			"img": "./assets/images/services/painting.jpg",
+			"img": "./assets/images/service/paint.jpg",
 			"name": "Painting",
 			"visible": false,
 			"description": "Professional painting service includes interior and exterior painting, drywall more. We will make your house the way you want to be. Professionals cover  smooth and clean work.",
@@ -35,7 +35,7 @@
 
 		{
 			"id": 5,
-			"img": "./assets/images/services/POP- False ceiling.jpg",
+			"img": "./assets/images/service/pop.jpg",
 			"name": "Home Interior ( POP, False Ceiling)",
 			"description": "On call service of professional interior workers who are expert in providing the luxurious look by working with the client’s requirement and fulfilling their dream house.",
 			"visible": false,
@@ -44,7 +44,7 @@
 
 		{
 			"id": 6,
-			"img": "./assets/images/services/AC Service.jpg",
+			"img": "./assets/images/service/acSeice.jpg",
 			"name": "Home Appliance Repair and Servicing",
 			"description": "On call service for repair, installation and uninstallation of appliance like AC, Refrigerator etc. We use latest technology jet pump for cleaning and servicing of the appliance.",
 			"visible": false,
