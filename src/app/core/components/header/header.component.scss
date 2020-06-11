@@ -61,5 +61,28 @@ height: 300px !important;
 }
 
 .navbar-nav .dropdown-menu{
-  width: 300px;
+  width: 308px;
+}
+
+
+
+
+
+
+@media (max-width:991px){
+  .navbar-light .navbar-toggler {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 25px;
+  }
+  .socialShare {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding: 5px 5px 5px 25px;
+    width: 100%;
+    
+  }
 }

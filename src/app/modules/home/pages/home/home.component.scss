@@ -4,3 +4,95 @@ div#header {
 .about{
     padding: 24px;
   }
+  .Tname{
+   
+    font-size: 15px;
+    font-weight: bold;
+    
+    padding: 34px 12px;
+}
+.Us >div .d-flex{
+  padding: 10px;;
+}
+
+ 
+.Us >div .d-flex > p {
+  padding: 0px 12px ;
+  text-align: left;
+}
+
+  @media (max-width:991px){
+    div#header {
+    min-height: 116px;}
+
+    .Us >div .d-flex {
+      flex-wrap: wrap;
+      padding: 0 20px ;
+    }
+    
+    .Us >div .d-flex > * {
+      width: 100%;
+    }
+    
+    .Us >div .d-flex > h4 {
+      padding: 10px  0;
+    }
+    
+    .Us >div .d-flex > p {
+      padding: 0 ;
+      font-size: 14px;
+    }
+    
+    .Us > div {
+      text-align: left;
+    }
+    }
+    @media (min-width: 992px){
+      .Us > div:nth-child(odd) h4.Tname {
+        order: 1;
+      }
+    .Tname{
+      width: 33%;
+      border-radius:120px 20px 120px 20px;
+      border: 1px solid #ddd;
+      background: #ffe6cc;
+    }
+    }
+  
+  
+
+  
+  @media (max-width: 767px){
+    .Us >div .d-flex {
+      flex-wrap: wrap;
+      padding: 0 20px ;
+  }
+  
+  .Us >div .d-flex > * {
+      width: 100%;
+  }
+  
+  .Us >div .d-flex > h4 {
+      padding: 10px  0;
+  }
+  
+  .Us >div .d-flex > p {
+      padding: 0 ;
+  }
+  
+  .Us > div {
+      text-align: left;
+  }}
+
+  .Tname{
+    color: #FF3E03;
+  }
+
+
+  .askservices{
+    background:white;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 16px;
+
+  }
