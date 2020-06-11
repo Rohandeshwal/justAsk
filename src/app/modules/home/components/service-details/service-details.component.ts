@@ -19,7 +19,7 @@ export class RegisterServiceComponent implements OnInit {
   ngOnInit(): void {
     this.initContactForm();
     this.getServiceData();
-    scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   initContactForm() {
