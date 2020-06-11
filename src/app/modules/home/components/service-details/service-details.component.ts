@@ -37,7 +37,8 @@ export class RegisterServiceComponent implements OnInit {
   }
   onContactFormSave() {
     const contactDetails = this.contactForm.getRawValue();
-    this.apiService.httpPost("http://localhost:3001/contact", contactDetails).subscribe(response => {
+    // TODO: Move the url to a constant/config file
+    this.apiService.httpPost("contact", contactDetails).subscribe(response => {
       this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.');
       this.submitted = true;
     });
