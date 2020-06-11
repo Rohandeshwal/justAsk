@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from 'src/app/shared/shared.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute } from '@angular/router';
 import { JustAskDataHelperService } from 'src/app/core/services/just-ask-data-helper-service';
+import { APIService } from 'src/app/core/services/api.service';
 @Component({
   selector: 'app-service-details',
   templateUrl: './service-details.component.html',
@@ -14,7 +14,7 @@ export class RegisterServiceComponent implements OnInit {
   model: any = {};
   submitted: Boolean = false;
   contactForm: FormGroup;
-  constructor(private serviceDataHelper: JustAskDataHelperService, private toastr: ToastrService, private activatedRoute: ActivatedRoute, private shared: SharedService) { }
+  constructor(private serviceDataHelper: JustAskDataHelperService, private toastr: ToastrService, private activatedRoute: ActivatedRoute, private apiService: APIService) { }
 
   ngOnInit(): void {
     this.initContactForm();
@@ -36,8 +36,10 @@ export class RegisterServiceComponent implements OnInit {
     });
   }
   onContactFormSave() {
-    console.log(this.contactForm.getRawValue());
-    this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.');
-    this.submitted = true;
+    const contactDetails = this.contactForm.getRawValue();
+    this.apiService.httpPost("http://localhost:3001/contact", contactDetails).subscribe(response => {
+      this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.');
+      this.submitted = true;
+    });
   }
 }

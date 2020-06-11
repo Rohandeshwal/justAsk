@@ -5,10 +5,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
-
+import { DeviceDetectorModule } from 'ngx-device-detector';
 import {CoreModule} from './core/core.module'
 import { HomeModule } from './modules/home/home.module';
-import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from './shared/shared.module';
 import { JustAskDataHelperService } from './core/services/just-ask-data-helper-service';
@@ -31,6 +30,7 @@ export function appInit(jusAskDataHelper:JustAskDataHelperService ) {
       
     }),
     AppRoutingModule,NgbModule,HomeModule,SharedModule,
+    DeviceDetectorModule.forRoot()
   ],
   providers: [JustAskDataHelperService,
     {
