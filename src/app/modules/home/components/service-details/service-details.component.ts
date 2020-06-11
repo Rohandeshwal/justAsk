@@ -24,6 +24,7 @@ export class RegisterServiceComponent implements OnInit {
 
   initContactForm() {
     this.contactForm = new FormGroup({
+      serviceName:new FormControl({value: this.serviceDetails.name,disabled:true},Validators.required),
       name: new FormControl('', Validators.required),
       phoneNumber: new FormControl('', Validators.required),
       address: new FormControl('')
