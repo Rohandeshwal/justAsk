@@ -45,4 +45,7 @@ export class RegisterServiceComponent implements OnInit {
       this.submitted = true;
     });
   }
+  scrollTo(sectionId: string){
+    this.router.navigate(['home'],{fragment: sectionId});
+  }
 }

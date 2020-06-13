@@ -1,5 +1,5 @@
 <div id="customHeader">
-  <app-header></app-header>
+  <app-header (scrollOutput)="scrollTo($event)"></app-header>
 </div>
 <div class="add-wrapper ">
   <div class="add-header mb-0">
@@ -59,7 +59,7 @@
       </div>
       <div class="d-flex justify-content-center button">
         <div class="back marr-10 marl-10">
-          <button type="button" class="back-btn btn">
+          <button type="button" class="back-btn btn" (click)="scrollTo('')">
             Back
           </button>
         </div>
