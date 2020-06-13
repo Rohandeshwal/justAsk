@@ -19,7 +19,7 @@ import { RegisterServiceComponent } from './components/service-details/service-d
   imports: [
     ReactiveFormsModule,
     CommonModule,BrowserAnimationsModule,FormsModule,ToastrModule.forRoot({
-      timeOut: 5000,
+      timeOut: 7000,
       positionClass: 'toast-top-full-width',
       preventDuplicates: false
     }),ToastContainerModule,

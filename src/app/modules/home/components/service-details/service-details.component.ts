@@ -41,7 +41,7 @@ export class RegisterServiceComponent implements OnInit {
     // TODO: Move the url to a constant/config file
     this.apiService.httpPost("contact", contactDetails).subscribe(response => {
       this.router.navigate(["home"]);
-      this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.');
+      this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.',`${this.serviceDetails.name} Service Request`);
       this.submitted = true;
     });
   }
