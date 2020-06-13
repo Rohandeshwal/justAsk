@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { JustAskDataHelperService } from 'src/app/core/services/just-ask-data-helper-service';
 import { APIService } from 'src/app/core/services/api.service';
 @Component({
@@ -14,11 +14,11 @@ export class RegisterServiceComponent implements OnInit {
   model: any = {};
   submitted: Boolean = false;
   contactForm: FormGroup;
-  constructor(private serviceDataHelper: JustAskDataHelperService, private toastr: ToastrService, private activatedRoute: ActivatedRoute, private apiService: APIService) { }
+  constructor(private serviceDataHelper: JustAskDataHelperService, private toastr: ToastrService, private activatedRoute: ActivatedRoute, private apiService: APIService, private router:Router) { }
 
   ngOnInit(): void {
-    this.initContactForm();
     this.getServiceData();
+    this.initContactForm();
     window.scrollTo(0, 0);
   }
 
@@ -40,6 +40,7 @@ export class RegisterServiceComponent implements OnInit {
     const contactDetails = this.contactForm.getRawValue();
     // TODO: Move the url to a constant/config file
     this.apiService.httpPost("contact", contactDetails).subscribe(response => {
+      this.router.navigate(["home"]);
       this.toastr.success('Thanks for choosing JustAsk Services. Our team will reach out to you shortly.');
       this.submitted = true;
     });

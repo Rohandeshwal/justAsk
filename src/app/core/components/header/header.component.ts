@@ -7,26 +7,16 @@ import { JustAskDataHelperService } from '../../services/just-ask-data-helper-se
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent  {
 
   services:any;
-  constructor( private justAskDataHelper:JustAskDataHelperService) { 
+  constructor( public justAskDataHelper:JustAskDataHelperService) { 
    
   }
 @Output()scrollOutput = new EventEmitter();
 
-  ngOnInit(): void {
-    this.getServices();
-  }
-  highlighter(id?){
-    
-  //  this.sharedService.setHighlighterId(id);
-    this.scrollOutput.emit(true)
+  navigateToSection(id?){
+    this.scrollOutput.emit(id);
+   }
 
-  }
-  getServices(){
- 
-    this.services = this.justAskDataHelper.getAllServices();
-    console.log(this.services);
-  }
 }
