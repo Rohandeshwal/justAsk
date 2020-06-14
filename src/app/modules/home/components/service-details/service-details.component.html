@@ -1,22 +1,31 @@
 <div id="customHeader">
   <app-header (scrollOutput)="scrollTo($event)"></app-header>
 </div>
-<div class="add-wrapper ">
-  <div class="add-header mb-0">
-    <span class="heading m-0" style="font-size:18px">Book Our {{ serviceDetails?.name }} Service</span>
-  </div>
-  <div class="profie my-4">
+<div class="add-wrapper">
+  <!-- <div class="add-header mb-0">
+  </div> -->
+  <div class="profie mb-4">
+    <div class="row mb-3  mt-3">
+      <div class="col">
+        <span class="heading" style="font-size:18px;font-weight: 600;text-decoration: underline;">Book Our {{ serviceDetails?.name }} Services</span>
+      </div>
+    </div>
     <div class="row">
       <div class="col-4">
         <img class="img" src="{{ serviceDetails?.img }}" alt="" width="400" height="200" />
       </div>
-      <div class="col-5 detail" style="text-align: justify;">{{serviceDetails?.detail}}</div>
+      <div class="col-5 detail"  style="text-align: justify;">
+        {{serviceDetails?.detail}}</div>
     </div>
   </div>
   <div class="form-wrapper">
     <form [formGroup]="contactForm" novalidate>
-      <div class="alert alert-warning">
-        <strong>Please Note !&nbsp;</strong> Your <b>Name</b> and <b>Phone Number</b> are mandatory fields.
+      <div class="row" *ngIf="contactForm.touched && contactForm.invalid">
+        <div class="col-m-8 col-s-12">
+          <div class="alert alert-danger" style="font-weight: 600;font-size: 14px;"> 
+            Please enter  the mandatory <b>Name</b> and <b>Phone Number</b> fields before booking our {{serviceDetails?.name}} service.
+           </div>
+        </div>
       </div>
       <div class="form-group">
         <div class="row">
@@ -50,10 +59,9 @@
         <div class="row">
           <div class="col-8">
             <label for="name" class="frm-label">Your Address</label>
-            <span class="required">&nbsp;*</span>
+            <!-- <span class="required">&nbsp;*</span> -->
             <textarea  class="form-input form-control"  formControlName="address" autosize
-               cols="2" rows="4" placeholder="Enter address details " maxlength="500"
-              required></textarea>
+               cols="2" rows="4" placeholder="Enter address details " maxlength="500"></textarea>
           </div>
         </div>
       </div>
@@ -64,8 +72,8 @@
           </button>
         </div>
         <div class="add marr-10 marl-10">
-          <button class="add-btn btn" (click)="onContactFormSave()">
-            Save
+          <button [disabled]="contactForm.invalid" class="add-btn btn" (click)="onContactFormSave()">
+              Book Service
           </button>
         </div>
       </div>
